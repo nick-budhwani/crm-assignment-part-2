@@ -1,11 +1,6 @@
 require 'sinatra'
 require_relative 'contact'
 
-
-get '/' do
-  "Main Menu"
-end
-
 get '/' do
   @crm_app_name = "Nick's CRM"
   erb :index
