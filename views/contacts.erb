@@ -6,6 +6,11 @@
 </head>
 <body>
   <h1>All Contacts</h1>
+  <!-- Now is also a good time to update the view all contacts page views/contacts.erb.
+  You should make each contact name a link to its individual show page. To get that
+  working, you'll have to add an <a href> to each contact with their proper id's.
+  Hint: Use an erb tag to access a contact's id. -->
+
   <ul>
     <% Contact.all.each do |contact| %>
       <li><%= contact.first_name %> <%= contact.last_name %></li>
