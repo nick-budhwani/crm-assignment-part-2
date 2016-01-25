@@ -2,7 +2,7 @@ require 'sinatra'
 require_relative 'contact'
 
 get '/contacts/:id' do
-  @contact = Contact.get(params[:id].to_i)
+  @contact = Contact.find(params[:id].to_i)
   if @contact
     erb :show_contact
   else
