@@ -5,21 +5,31 @@
   <title>layout</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-  <header>
-  <!-- Throw logo in here. Maybe a banner -->
-    <nav>
+
+<body class="container_body">
+
+  <header class="container_header">
+
+    <img src="/crm_banner.png" alt="">
+
+    <nav class="container_nav">
       <!-- Throw horizontal top nav bar here -->
     </nav>
 
   </header>
 
-  <section>
+  <section class="container_section">
     <%= yield %>
   </section>
 
-  <footer>
-    <!-- Random footer content -->
+  <aside class="container_aside">
+#put in the side nav bar
+  </aside>
+
+  <footer class="container_footer">
+
+    <p>Nick Budhwani Bitmaker Labs CRM-Web-Assignment</p>
+
   </footer>
 
 </body>
