@@ -7,6 +7,10 @@ get '/' do
 end
 
 get '/contacts' do
+  Contact.create('Mark', 'Zuckerberg', 'mark@facebook.com', 'CEO')
+  Contact.create('Sergey', 'Brin', 'sergey@google.com', 'Co-Founder')
+  Contact.create('Steve', 'Jobs', 'steve@apple.com', 'Visionary')
+
   erb :contacts
 end
 
