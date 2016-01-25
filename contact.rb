@@ -46,7 +46,8 @@ class Contact
   end
 
   def delete
-    @@contacts.delete(self.class.get(@id))
+    @@contacts.delete(self.class.get(@id)) #@@contacts.delete_if { |contact| contact.id == self.id }
+
   end
 
 end
