@@ -1,14 +1,6 @@
 require 'sinatra'
 require_relative 'contact'
 
-Contact.create('Johnny', 'Bravo', 'johnny@bitmakerlabs.com', 'Rockstar')
-Contact.create('nick', 'b', 'johnny@bitmakerlabs.com', 'Rockstar')
-Contact.create('jack', 'brown', 'johnny@bitmakerlabs.com', 'Rockstar')
-Contact.create('aaron', 'baldwin', 'johnny@bitmakerlabs.com', 'Rockstar')
-Contact.create('steven', 'Bravo', 'johnny@bitmakerlabs.com', 'Rockstar')
-Contact.create('eric', 'Bravo', 'johnny@bitmakerlabs.com', 'Rockstar')
-Contact.create('harley', 'Bravo', 'johnny@bitmakerlabs.com', 'Rockstar')
-
 get '/contacts/:id' do
   @contact = Contact.get(params[:id].to_i)
   if @contact
