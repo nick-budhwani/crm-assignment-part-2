@@ -1,6 +1,12 @@
 require 'sinatra'
 require_relative 'contact'
 
+# Now that you're familiar with the different ActiveRecord methods you can use, the next
+# step is for you to update these routes:
+# get '/contacts/:id/edit'
+# put '/contacts/:id'
+# delete '/contacts/:id'
+
 get '/contacts/:id' do
   @contact = Contact.find(params[:id].to_i)
   if @contact
